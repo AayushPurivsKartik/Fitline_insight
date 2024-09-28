@@ -34,6 +34,10 @@ body{
      color: black;
      padding: 20px !important;
  }
+ .nav-contant a:hover{
+   border-bottom: 2px solid gainsboro;
+   transition: 0.2s;
+ }
  .popup{
     width: 14rem !important;
     height: 12rem !important;

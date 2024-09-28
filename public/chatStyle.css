@@ -1,128 +1,161 @@
-*{
+* {
     padding: 0;
     margin: 0;
-}
-body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-}
-
-@keyframes gradient {
+  }
+  body {
+    background: #000;
+  }
+  .cater3-movingBG {
+    height: 100%;
+    background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg);
+    background-size: 125%;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;
+  }
+  
+  @keyframes animatedBackground {
     0% {
-        background-position: 0% 0%;
+      background-position: 0 0;
     }
     50% {
-        background-position: 100% 100%;
+      background-position: 50% 0;
     }
     100% {
-        background-position: 0% 0%;
+      background-position: 0 0;
     }
-}
-
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
+  }
+  
+  .flyinTxtCont {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    margin-left: 2em;
+  }
+  .flyIn {
+    color: #fff;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    line-height: 1.2em;
+    position: relative;
+    text-shadow: 2px 2px 40px rgba(0, 0, 0, 0.7);
+  }
+  .lineOne {
+    transition-delay: 0.2s;
+    transition: 0.4s ease in;
+    animation: txtFlyIn 0.3s linear;
+  }
+  .lineTwo {
+    transition-delay: 0.4s;
+    transition: 0.6s ease in;
+    animation: txtFlyIn 0.6s linear;
+  }
+  .lineThree {
+    transition-delay: 0.6s;
+    transition: 0.8s ease in;
+    animation: txtFlyIn 0.9s linear;
+  }
+  .lineOne,
+  .lineTwo,
+  .lineThree {
+    font-size: 110px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .lineFour {
+    transition-delay: 2s;
+    transition: 2s ease in;
+    animation: fadeIn 2s linear;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    color: #000;
+    box-size: border-box;
+    max-width: 63%;
+    max-width: 22em;
+    font-size: 32px;
+    padding: 0.2em 0.5em;
+    margin-top: 30px;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
     }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
     100% {
-        transform: translateX(1);
+      opacity: 1;
     }
-}
-.container{
+  }
+  @keyframes txtFlyIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .container {
     padding-top: 20px;
-    /* background-color: rgb(23, 15, 45); */
     background-image: url(bi.jpg);
     background-size: cover;
-    width: 100vw;
+    width: 85rem;
     height: fit-content;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: black;
     font-size: 18px;
     font-weight: 500;
-}
-.response{
-    /* height: 50%; */
+    /* background-color: rgb(23, 15, 45);
+    height: 100vh; */
+  }
+  .response {
     margin-inline: 150px;
     line-height: 1.5;
     font-style: italic;
-}
-.client{
+  }
+  .client {
     text-align: left;
-    padding: 10px;
     border-radius: 7px;
+    padding: 10px;
     width: fit-content;
     background-color: rgb(99, 99, 244);
-}
-.ai{
+  }
+  .ai {
     text-align: right;
     padding: 10px;
     margin-left: 300px;
     border-radius: 7px;
     width: fit-content;
-    background-color: aqua;
-}
-.input-div{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+  }
+  .input-div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 60px 60px;
-}
-input{
+  }
+  input {
     outline: none;
     width: 600px;
     height: 25px;
     border-radius: 5px;
     border: none;
     padding: 5px;
-}
-button{
+  }
+  button {
     background-color: blue;
     outline: none;
     color: white;
@@ -132,4 +165,8 @@ button{
     border-radius: 5px;
     text-align: center;
     vertical-align: middle;
-}
+  }
+  #res-text {
+    color: white;
+  }
+  

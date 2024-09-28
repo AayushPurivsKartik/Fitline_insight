@@ -1,166 +1,153 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
 }
 
-body {
+body{
     height: 100vh;
-    background-color: #4158D0;
-    background-size: cover;
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    background-image:linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    }
+
+.heading{
+   text-align: center;
+   padding: 2rem;
+   font-size:3.5rem;
+   font-weight: 900;
 }
-
-.heading {
-    margin-block: 2rem;
-
-}
-
-h2 {
+.navbar{
+    background-color: black;
     text-align: center;
-    font-size: 70px;
-    font-weight: 300;
-}
-
-.para {
-    margin-block: 3rem;
-    padding: 1rem;
-    border-bottom: 1px solid black;
-}
-
-.navbar {
+    font-size:25px;
+    padding:2rem;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    background-color: black;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.7);
-
+    position:sticky;
+    top:0%;
+    z-index:1;
+    
 }
 .navbar a{
     color: beige;
     text-decoration: none;
-    font-size: 1.5rem;
-    transition: .3s;
 }
-
-.navbar a:hover {color: red;
+.navbar a:hover{
+    color:red;
 }
-
-
-
-li {
-    list-style-type: none;
-    display: inline;
+.show img{
+    height:24rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1.6px);
 }
-.show{
+    
+.show {
+   padding:2rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2,1fr);
-    gap: 3rem;
-    padding: 2rem;
-
+    gap:1rem;
+    
 
 }
-.show img{
-    height: 420px;
-    width: 500px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    transition: .3s all;
-   
-}
+
 .show img:hover{
     scale: 1.1;
-}
-#image {
-    background-color: bisque;
-    position: fixed;
-    top: 60%;
-    object-fit: cover;
-    background-size: cover;
-    left: 70%;
     transition: .3s;
-    border-radius: 10px;
-    width: 240px;
-    height: 240px;
-    display: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.note{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    padding: 1rem;
+#image{
+    /* background-color: bisque; */
+ height:30rem;
+ width: 29rem;
+ position: fixed;
+ /* object-fit: cover; */
+ background-size:contain;
+ background-repeat: no-repeat;
+background-position: center;
+ display: none;
+ top:30% ;
+ left:60%;
+ /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); */
 }
-
-.title{
-    font-weight: 600;
-    font-size: 1rem;
+#warmup{
+    text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(172, 246, 223);
 }
 .effect{
-    border-bottom: 1px dotted black;
-}
-.effect:hover {
-    color: rgb(249, 249, 251);
-    background-color: rgb(79, 96, 250);
-    transition: .3s ease;
-}
-
-
-
-#warmup {
-    padding: 20px;
-    font-size: 25px;
-    line-height: 40px;
+    height: 2.5rem;
+    border-bottom: 2px dotted black;
+    display: flex;
+    align-items: center;
     text-align: center;
-    background-color: rgb(245, 223, 183);
+    justify-content: center;
 }
 
-#dailyex {
-    padding: 20px;
-    font-size: 25px;
-    line-height: 40px;
+.effect:hover{
+    color:white;
+    background-color: rgb(82, 82, 253);
+    transition: .3s;
+}
+#daily{
     text-align: center;
-    background-color: rgb(200, 226, 218);
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(186, 255, 172);
 }
 
-#shaping {
-    padding: 20px;
-    font-size: 25px;
-    line-height: 40px;
+#belly{
     text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(203, 195, 253);
 }
 
-#belly {
-    background-color: rgb(200, 154, 243);
-}
-
-#legs {
-    background-color: rgb(254, 156, 156);
-}
-
-#control {
-    padding: 20px;
-    font-size: 25px;
-    line-height: 40px;
+#legs{
     text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(244, 250, 210);
 }
 
-#bp {
-    background-color: rgb(252, 250, 180);
+#bp{
+    text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(254, 193, 184);
+}
+#sugar{
+    text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(192, 189, 247);
 }
 
-#sugar {
-    background-color: rgb(201, 194, 194);
+#thyroid{
+    text-align: center;
+    padding:1rem;
+    font-size:1.7rem;
+    background-color: rgb(172, 246, 223);
+}
+h4{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 700;
+}
+ h3{ padding:0.4rem;
+    font-weight: 800;
+
+ }
+.note{
+    padding: 1.5rem;
+   border-bottom:4px double black;
+
 }
 
-#thyroid {
-    background-color: rgb(241, 168, 249);
+span{
+    font-size:1.2rem;
+    font-weight:300;
 }
+#nt{background-color: rgb(39, 120, 220);
+color: azure;}

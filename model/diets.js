@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Schema=mongoose.Schema;
-// Define Meal Plan Schema
 const mealPlanSchema = new Schema({
   userId: {
     type: Schema.Types.ObjectId,

@@ -104,6 +104,7 @@ app.post('/diet',wrapAsync(async(req,res)=>{
         mealType,foodType,foodItems,quantity
     })
     let q=await newDiet.save();
+    
     res.redirect('/diet');
 }));
 app.get('/dietDetails',wrapAsync(async(req,res)=>{
