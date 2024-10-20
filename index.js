@@ -122,7 +122,9 @@ app.get('/ayurveda',(req,res)=>{
 app.get('/chatbot',(req,res)=>{
     res.render('chatbot');
 });
-
+app.get('/contact',(req,res)=>{
+    res.render('contact');
+});
 // for error handling
 app.all('*',(req,res,next)=>{
     next(new ExpressError(404,'Page not found'));

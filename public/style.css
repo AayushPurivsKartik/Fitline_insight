@@ -2,7 +2,23 @@ body{
    box-sizing: border-box !important;
    margin: 0 !important;
    padding: 0 !important;
-   font-family: Arial, Helvetica, sans-serif !important;  
+   font-family: Arial, Helvetica, sans-serif !important;
+   height: 100%;
+    background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg);
+    background-size: 125%;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;  
+ }
+ @keyframes animatedBackground {
+   0% {
+     background-position: 0 0;
+   }
+   50% {
+     background-position: 50% 0;
+   }
+   100% {
+     background-position: 0 0;
+   }
  }
  .navbar{
      height: 5rem !important;
@@ -93,7 +109,7 @@ body{
  .hero-sec-image{
      width: 100% !important;
      height: 33rem !important;
-     background-color: gainsboro;
+     /* background-color: gainsboro; */
      display: flex !important;
      justify-content: center !important;
      align-items: center !important;
@@ -116,7 +132,8 @@ body{
  .health-cont{
      width: 100% !important;
      height: 187px !important;
-     background-color: rgb(255, 255, 255);
+     color: #fff;
+     /* background-color: rgb(255, 255, 255); */
  }
   .health-cont svg{
      position: absolute !important;
@@ -134,7 +151,7 @@ body{
   .health-img-cont{
      width: 100% !important;
      height: 95rem !important;
-     background-color: gainsboro;
+     /* background-color: gainsboro; */
      margin-top: 20px !important;
      display: block !important;
      align-items: center !important;

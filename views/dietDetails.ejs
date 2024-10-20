@@ -34,11 +34,11 @@
        </header>
        <!--Details part-->
     <div class="sav-details">
-    <h1>YOUR SAVE DIET DETAILS</h1>
+    <h1 style="color: white;">YOUR SAVE DIET DETAILS</h1>
     </div>
-    <div class="details-part">
+    <div class="details-part" style="color: white;background-color:black;width:19rem;">
         <%  for(let i=0;i<answers.length;i++)  { %>
-          <p>Meal Type:- <%= answers[i].mealType%></p>
+          <p style="color: green;">Meal Type:- <%= answers[i].mealType%></p>
           <p>Food Type:-</p>
           <ul>
             <% for(let q=0;q<answers[i].foodType.length;q++) {%>
@@ -52,26 +52,24 @@
     </div>
 
 <!--Footer part-->
-    <footer>
-        <div class="foot-part">
-          <div class="content-foot-img">
-             <img src="footer-img.png" alt="">
-          </div>
-          <div class="content-foot">
-            <div class="part">Privacy Policies</div>
-            <div class="part">About Us</div>
-            <div class="part">Contact Us</div>
-          </div>
-          <div class="content-foot">
-            <div class="part"> Resources And Articals</div>
-            <div class="part">Health And Fitness Pros</div>
-          </div>
-        </div>
-        </footer>
-        <div class="team">
-          <p>Copyrights @2024 Sanskar Educational Group
-          --Created by Bug Hunters--</p>
-        </div>
+<footer style="margin-top: 5rem;">
+  <div class="foot-part">
+    <div class="content-foot-img">
+       <img src="footer-img.png" alt="">
+    </div>
+    <div class="content-foot">
+      <div class="part">Privacy Policies</div>
+      <div class="part">About Us</div>
+      <div class="part">Contact Us</div>
+    </div>
+    <div class="content-foot">
+      <div class="part"> Resources And Articals</div>
+      <div class="part">Health And Fitness Pros</div>
+    </div>
+  </div>
+  <p style="padding-left: 18rem;background-color: #d9d9d9;">Copyrights @2024 Sanskar Educational Group
+    --Created by Bug Hunters--</p>
+  </footer>
         <script src="/script.js"></script>
 </body>
 </html>
